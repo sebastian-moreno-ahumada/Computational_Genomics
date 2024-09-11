@@ -1,0 +1,202 @@
+cLoading DNA sequences...
+Calculating genetic distances...
+Running NJ...
+
+
+Iteration 1.
+
+
+Current node IDs of the rows/columns of D and Q are:
+[1 2 3 4 5 6 7]
+
+D is:
+[[0 0.78947368 0.73684211 0.57894737 0.63157895 0.73684211 0.68421053]
+ [0.78947368 0 0.21052632 0.57894737 0.52631579 0.36842105 0.42105263]
+ [0.73684211 0.21052632 0 0.52631579 0.52631579 0.26315789 0.31578947]
+ [0.57894737 0.57894737 0.52631579 0 0.15789474 0.42105263 0.47368421]
+ [0.63157895 0.52631579 0.52631579 0.15789474 0 0.36842105 0.42105263]
+ [0.73684211 0.36842105 0.26315789 0.42105263 0.36842105 0 0.10526316]
+ [0.68421053 0.42105263 0.31578947 0.47368421 0.42105263 0.10526316 0]]
+
+Q is:
+[[0 -3.1052632 -3.0526316 -4 -3.6315789 -2.7368421 -3.1578947]
+ [-3.1052632 0 -4.4210526 -2.7368421 -2.8947368 -3.3157895 -3.2105263]
+ [-3.0526316 -4.4210526 0 -2.6842105 -2.5789474 -3.5263158 -3.4210526]
+ [-4 -2.7368421 -2.6842105 0 -4.5789474 -2.8947368 -2.7894737]
+ [-3.6315789 -2.8947368 -2.5789474 -4.5789474 0 -3.0526316 -2.9473684]
+ [-2.7368421 -3.3157895 -3.5263158 -2.8947368 -3.0526316 0 -4.1578947]
+ [-3.1578947 -3.2105263 -3.4210526 -2.7894737 -2.9473684 -4.1578947 0]]
+
+Minimum q is -4.578947368421052 between row/column 3 (node ID 4) and row/column 4 (node ID 5)
+
+Adding these to edges matrix, with internal node IDs increasing as we go:
+[8 4 0.089473684]
+[8 5 0.068421053]
+
+Deleting node at row/column 4 (node ID 5), from distance matrix and indices list.
+
+Replacing existing row/column 3 (for node ID 4), in distance matrix, with the new parent node distances.
+
+Replacing node index/ID entry 3 (for node ID 4), with the parent index (node ID 8), in the list of current node indices/IDs for D and Q.
+
+
+Iteration 2.
+
+
+Current node IDs of the rows/columns of D and Q are:
+[1 2 3 8 6 7]
+
+D is:
+[[0 0.78947368 0.73684211 0.52631579 0.73684211 0.68421053]
+ [0.78947368 0 0.21052632 0.47368421 0.36842105 0.42105263]
+ [0.73684211 0.21052632 0 0.44736842 0.26315789 0.31578947]
+ [0.52631579 0.47368421 0.44736842 0 0.31578947 0.36842105]
+ [0.73684211 0.36842105 0.26315789 0.31578947 0 0.10526316]
+ [0.68421053 0.42105263 0.31578947 0.36842105 0.10526316 0]]
+
+Q is:
+[[0 -2.5789474 -2.5 -3.5 -2.3157895 -2.6315789]
+ [-2.5789474 0 -3.3947368 -2.5 -2.5789474 -2.4736842]
+ [-2.5 -3.3947368 0 -2.3157895 -2.7105263 -2.6052632]
+ [-3.5 -2.5 -2.3157895 0 -2.6578947 -2.5526316]
+ [-2.3157895 -2.5789474 -2.7105263 -2.6578947 0 -3.2631579]
+ [-2.6315789 -2.4736842 -2.6052632 -2.5526316 -3.2631579 0]]
+
+Minimum q is -3.4999999999999996 between row/column 0 (node ID 1) and row/column 3 (node ID 8)
+
+Adding these to edges matrix, with internal node IDs increasing as we go:
+[9 1 0.43092105]
+[9 8 0.095394737]
+
+Deleting node at row/column 3 (node ID 8), from distance matrix and indices list.
+
+Replacing existing row/column 0 (for node ID 1), in distance matrix, with the new parent node distances.
+
+Replacing node index/ID entry 0 (for node ID 1), with the parent index (node ID 9), in the list of current node indices/IDs for D and Q.
+
+
+Iteration 3.
+
+
+Current node IDs of the rows/columns of D and Q are: *my example 2 matches at this point aswell*
+[9 2 3 6 7]
+
+D is:
+[[0 0.36842105 0.32894737 0.26315789 0.26315789]
+ [0.36842105 0 0.21052632 0.36842105 0.42105263]
+ [0.32894737 0.21052632 0 0.26315789 0.31578947]
+ [0.26315789 0.36842105 0.26315789 0 0.10526316]
+ [0.26315789 0.42105263 0.31578947 0.10526316 0]]
+
+Q is:
+[[0 -1.4868421 -1.3552632 -1.4342105 -1.5394737]
+ [-1.4868421 0 -1.8552632 -1.2631579 -1.2105263]
+ [-1.3552632 -1.8552632 0 -1.3289474 -1.2763158]
+ [-1.4342105 -1.2631579 -1.3289474 0 -1.7894737]
+ [-1.5394737 -1.2105263 -1.2763158 -1.7894737 0]]
+
+Minimum q is -1.8552631578947367 between row/column 1 (node ID 2) and row/column 2 (node ID 3)
+
+Adding these to edges matrix, with internal node IDs increasing as we go:
+[10 2 0.14692982]
+[10 3 0.063596491]
+
+Deleting node at row/column 2 (node ID 3), from distance matrix and indices list.
+
+Replacing existing row/column 1 (for node ID 2), in distance matrix, with the new parent node distances.
+
+Replacing node index/ID entry 1 (for node ID 2), with the parent index (node ID 10), in the list of current node indices/IDs for D and Q.
+
+
+Iteration 4.
+
+
+Current node IDs of the rows/columns of D and Q are:
+[ 9 10  6  7]
+
+D is:
+[[0 0.24342105 0.26315789 0.26315789]
+ [0.24342105 0 0.21052632 0.26315789]
+ [0.26315789 0.21052632 0 0.10526316]
+ [0.26315789 0.26315789 0.10526316 0]]
+
+Q is:
+[[0 -1 -0.82236842 -0.875]
+ [-1 0 -0.875 -0.82236842]
+ [-0.82236842 -0.875 0 -1]
+ [-0.875 -0.82236842 -1 0]]
+
+Minimum q is -1.0 between row/column 2 (node ID 6) and row/column 3 (node ID 7)
+
+Adding these to edges matrix, with internal node IDs increasing as we go:
+[11 6 0.039473684]
+[11 7 0.065789474]
+
+Deleting node at row/column 3 (node ID 7), from distance matrix and indices list.
+
+Replacing existing row/column 2 (for node ID 6), in distance matrix, with the new parent node distances.
+
+Replacing node index/ID entry 2 (for node ID 6), with the parent index (node ID 11), in the list of current node indices/IDs for D and Q.
+
+
+Iteration 5.
+
+
+Current node IDs of the rows/columns of D and Q are:
+[ 9 10 11]
+
+D is:
+[[0 0.24342105 0.21052632]
+ [0.24342105 0 0.18421053]
+ [0.21052632 0.18421053 0]]
+
+Q is:
+[[0 -0.63815789 -0.63815789]
+ [-0.63815789 0 -0.63815789]
+ [-0.63815789 -0.63815789 0]]
+
+Minimum q is -0.638157894736842 between row/column 0 (node ID 9) and row/column 1 (node ID 10)
+
+Adding these to edges matrix, with internal node IDs increasing as we go:
+[12 9 0.13486842]
+[12 10 0.10855263]
+
+Deleting node at row/column 1 (node ID 10), from distance matrix and indices list.
+
+Replacing existing row/column 0 (for node ID 9), in distance matrix, with the new parent node distances.
+
+Replacing node index/ID entry 0 (for node ID 9), with the parent index (node ID 12), in the list of current node indices/IDs for D and Q.
+
+
+Neighbor-joining complete. Adding final edge to matrix:
+[12 11 0.075657895]
+
+Reversing order of indices of internal nodes to comply with output requirement (root node is index ntips + 1, other nodes increase according to pre-order traversal).
+
+Edges before reversing internal node ID order:
+[[8 4 0.089473684]
+ [8 5 0.068421053]
+ [9 1 0.43092105]
+ [9 8 0.095394737]
+ [10 2 0.14692982]
+ [10 3 0.063596491]
+ [11 6 0.039473684]
+ [11 7 0.065789474]
+ [12 9 0.13486842]
+ [12 10 0.10855263]
+ [12 11 0.075657895]]
+
+Edges after reversing internal node ID order:
+[[12 4 0.089473684]
+ [12 5 0.068421053]
+ [11 1 0.43092105]
+ [11 12 0.095394737]
+ [10 2 0.14692982]
+ [10 3 0.063596491]
+ [9 6 0.039473684]
+ [9 7 0.065789474]
+ [8 11 0.13486842]
+ [8 10 0.10855263]
+ [8 9 0.075657895]]
+Writing edges file...
+Writing Newick formatted tree...
