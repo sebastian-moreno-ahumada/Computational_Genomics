@@ -1,0 +1,24 @@
+Q: Where is the largest discrepancy in amino acid counts between the 
+coding sequences (correct frame shift) and the whole genome 
+sequence (random frame shift), and why?
+
+A:
+- The largest discrepancy in amino acid counts is most visably the 'STP' (stop) encoding 
+where there is an abundance(750+ STP encodings) within the whole genome(random frame shift) and very few of those
+encoding in the sequence genome(correct frame shift). Even more so, we can see by inspecting the 
+fna file for 'seperate genes', that there are 12 seperate genomic strands, which trivially 
+then have 12 respective stop encodings, which is accurate in the findings of the amino acid frequence comparings
+barplot. 
+
+- The reason for this discrepancy is that by including a random frame shift, all the genomic sequences
+are essentially combined together with no structure or order. When directly translating from codon to amino acid, certain codons 
+will be misinterpreted as a different amino acid. In other words, due to the random frame shift, if we consider a chunk of a random base sequence
+"...ACTGA...." it could be translating those respective bases/codons as "ACT" or "CTG" or "TGA" and so forth. 
+Moreover, we can further deduce the random frame shift is misleading since it does not start at the corresponsing position
+of the first genomic sequence that encodes a protein/trait, index 265; where as the seperated sequences do account for this and incorporate a correct frame shift. 
+This is why we are getting inconsistent results when translating to amino acids and this doesn't only apply to the 
+STP sequence but all other amino acids leading to overall inaccurate results. Lastly, regarding the whole genome fna file,
+it wouldn't make sense to have over 750 STP sequences for this respective amount of amino acids, meaning that certain
+genomic strands are very short, which we know to be false since they can encode 100's and 100's of amino acids for a 
+single protein. Math for the previous: 774 STP encodings, this means that for 29,000 (bases) / 3 (bases per amino) = 9,666 amino acid encodings.
+This then means that 9,666 (amino acids encodings)/ 774(STP encodings) = 12.48 Amino Acids per protein.
